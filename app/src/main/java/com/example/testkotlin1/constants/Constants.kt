@@ -1,4 +1,4 @@
-package com.example.testkotlin1.ui.activitys.constants
+package com.example.testkotlin1.constants
 
 object Constants {
 
