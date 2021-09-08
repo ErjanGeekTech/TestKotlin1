@@ -11,12 +11,27 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="20dp"
         android:textSize="20sp"
         android:id="@+id/show_text"
         android:gravity="center"
         android:textColor="@color/white"
         android:layout_width="0dp"
         android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/next_activity_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Activity"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/show_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
