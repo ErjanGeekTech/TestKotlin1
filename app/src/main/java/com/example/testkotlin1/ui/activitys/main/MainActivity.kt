@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.testkotlin1.R
 import com.example.testkotlin1.databinding.ActivityMainBinding
-import com.example.testkotlin1.ui.activitys.constants.Constants.EXTRA_INPUT_TEXT
+import com.example.testkotlin1.constants.Constants.EXTRA_INPUT_TEXT
 import com.example.testkotlin1.ui.activitys.show.ShowActivity
 
 
@@ -18,7 +18,12 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        initialize()
         setupListener()
+    }
+
+    private fun initialize() {
+        binding.txtShow.text = intent.getStringExtra(EXTRA_INPUT_TEXT) ?: ""
     }
 
     private fun setupListener() {
